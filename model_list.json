@@ -36,6 +36,24 @@
         "accelerators": "cpu,gpu"
       },
       "taskTypes": ["llm_chat", "llm_prompt_lab", "llm_ask_image", "llm_ask_audio"]
+    },
+    {
+      "id": "Qwen3-4B-Thinking-2507-GGUF",
+      "name": "Qwen3-4B-Thinking-2507-GGUF",
+      "runtime": "LLAMA_CPP",
+      "chat_template": "<|im_start|>user\n{user_input}<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+      "supported_tasks": ["single_turn_chat"],
+      "modelId": "unsloth/Qwen3-4B-Thinking-2507-GGUF",
+      "modelFile": "Qwen3-4B-Thinking-2507-GGUF.gguf",
+      "fileuri": "https://huggingface.co/unsloth/Qwen3-4B-Thinking-2507-GGUF/blob/main/Qwen3-4B-Thinking-2507-UD-Q4_K_XL.gguf",
+      "defaultConfig": {
+        "topK": 64,
+        "topP": 0.95,
+        "temperature": 1.0,
+        "maxTokens": 4096,
+        "accelerators": "cpu,gpu"
+      },
+      "taskTypes": ["llm_chat", "llm_prompt_lab", "llm_ask_image", "llm_ask_audio"]
     }
   ]
 }
