@@ -1,0 +1,41 @@
+{
+  "models": [
+    {
+      "id": "Gemma-3n-E2B-it-GGUF",
+      "name": "Gemma-3n-E2B-it-GGUF",
+      "runtime": "LLAMA_CPP",
+      "name": "Gemma-3n-E2B-it-GGUF",
+      "chat_template": "<start_of_turn>user\n{user_input}<end_of_turn>\n<start_of_turn>model\n",
+      "supported_tasks": ["single_turn_chat"],
+      "modelId": "unsloth/gemma-3n-E2B-it-GGUF",
+      "modelFile": "gemma-3n-E2B-it-UD-Q4_K_XL.gguf",
+      "fileuri": "https://huggingface.co/unsloth/gemma-3n-E2B-it-GGUF/blob/main/gemma-3n-E2B-it-UD-Q4_K_XL.gguf",
+      "defaultConfig": {
+        "topK": 64,
+        "topP": 0.95,
+        "temperature": 1.0,
+        "maxTokens": 4096,
+        "accelerators": "cpu,gpu"
+      },
+      "taskTypes": ["llm_chat", "llm_prompt_lab", "llm_ask_image", "llm_ask_audio"]
+    },
+    {
+      "id": "gemma-3-270m-it-qat-GGUF",
+      "name": "gemma-3-270m-it-qat-GGUF",
+      "runtime": "LLAMA_CPP",
+      "chat_template": "<start_of_turn>user\n{user_input}<end_of_turn>\n<start_of_turn>model\n",
+      "supported_tasks": ["single_turn_chat"],
+      "modelId": "unsloth/gemma-3-270m-it-qat-GGUF",
+      "modelFile": "gemma-3-270m-it-qat-GGUF.gguf",
+      "fileuri": "https://huggingface.co/unsloth/gemma-3-270m-it-qat-GGUF/blob/main/gemma-3-270m-it-qat-UD-Q4_K_XL.gguf",
+      "defaultConfig": {
+        "topK": 64,
+        "topP": 0.95,
+        "temperature": 1.0,
+        "maxTokens": 4096,
+        "accelerators": "cpu,gpu"
+      },
+      "taskTypes": ["llm_chat", "llm_prompt_lab", "llm_ask_image", "llm_ask_audio"]
+    }
+  ]
+}
